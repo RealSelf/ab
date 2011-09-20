@@ -10,7 +10,7 @@ class AB2_VariantUtils {
      * @param array $props an associative array mapping variant names to properties
      * @return array
      */
-    public static function buildVariants($weights, $props) {
+    public static function buildVariants($weights, $props=null) {
         if (!is_array($weights)) {
             throw new InvalidArgumentException('We need an associative array of weights here.');
         }
